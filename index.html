@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Le titre de la page -->
+    <title>cours HTML</title>
+    <!-- icone de l'onglet -->
+    <link rel="shorcut icon" href="logo-html.png" />
+  </head>
+  <body>
+    <h1 class="The menu element">Menu</h1>
+    <ul>
+      <menu>
+        <li>Acceuil</li>
+        <li>A Propos</li>
+        <li>Travail</li>
+        <li>CV</li>
+      </menu>
+    </ul>
+    <header>
+      <h1><span>&#9755;</span>Intro</h1>
+      <p>
+        Texte de présentation. <em>Voici un guide en italique</em>.
+        <strong>Et un index en gras</strong>.
+        <span>L'élément en span ne revient pas à la ligne</span>
+      </p>
+      <p>
+        Le programmeur informatique est comme un traducteur qui jongle avec les
+        différents langages informatiques pour répondre aux besoins de ses
+        clients. Compte tenu du caractère incontournable du codage, ses domaines
+        d'exercice sont aujourd'hui aussi nombreux que variés. Un métier qui ne
+        connaît pas la crise, réservé aux candidats minutieux et adaptables.
+      </p>
+    </header>
+    <section>
+      <div>
+        <h2>Acceuil</h2>
+        <img src="Photo-web.jpg" height="200" alt="image-web" />
+      </div>
+      <section>
+        <div>
+          <h3>A Propos</h3>
+          <ul>
+            <li>UL= unordered list</li>
+            <li>UL= unordered list</li>
+            <li>UL= unordered list</li>
+          </ul>
+          <ol>
+            <li>OL= ordered list</li>
+            <li>OL= ordered list</li>
+            <li>OL= ordered list</li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h4>Travail</h4>
+          <table border="1" width="50%">
+            <!-- legende -->
+            <caption>
+              Polulations d'afrique
+            </caption>
+            <!-- En-tête -->
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Populations</th>
+              </tr>
+            </thead>
+            <!-- Corps du tableau  -->
+            <tbody>
+              <tr>
+                <td>Sénégal</td>
+                <td>18M</td>
+              </tr>
+              <tr>
+                <td>Mauritanie</td>
+                <td>10M</td>
+              </tr>
+              <tr>
+                <td>Mali</td>
+                <td>25M</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h5><span>&#9759;</span>CV</h5>
+          <a href="https://www.htmlcheatsheet.com/" target="_blank">
+            html support cours</a
+          >
+          <br />
+          <a
+            href="https://www.toptal.com/designers/htmlarrows/symbols/"
+            target="_blank"
+          >
+            Icones en html</a
+          >
+        </div>
+      </section>
+      <div>
+        <h6>Video</h6>
+        <video src="Video.mp4" height="400" autoplay loop muted></video>
+      </div>
+    </section>
+    <br />
+    <!-- Formulaire -->
+    <section>
+      <h1>Formulaire</h1>
+      <form action="/action.php" method="post">
+        <label for="name">Nom</label
+        ><input id="name" type="text" placeholder="entrez votre nom" />
+        <label for="age">Age</label>
+        <input
+          id="age"
+          type="number"
+          min="0 "
+          max="99"
+          step="1"
+          value="18"
+        /><br />
+        <!-- input select -->
+        <label for="gender">Genre</label>
+        <select id="gender">
+          <option value="homme">Homme</option>
+          <option value="femme">Femme</option></select
+        ><br />
+        <!-- input radio -->
+        <div>
+          <input type="radio" name="type" checked id="human" />
+          <label for="human">Humain</label>
+
+          <input type="radio" name="type" id="dog" />
+          <label for="dog">Chien</label>
+
+          <input type="radio" name="type" id="car" />
+          <label for="car">voirure</label>
+        </div>
+
+        <textarea
+          cols="30"
+          rows="10"
+          placeholder="entrez votre commentaire ici"
+        >
+        </textarea
+        ><br />
+        <!-- input chechbox -->
+        <label><input type="checkbox" />Accepter les CGV</label>
+        <br /><input type="submit" value="Valider" />
+      </form>
+    </section>
+    <br />
+    <section>
+      <h1>Contact</h1>
+      <!-- Mail et envoi de fichier -->
+    </section>
+    <footer>
+      <a href="mailto:diattasadya@gmail.com">Ecrivez-moi!</a><br />
+      <a href="Notice.txt" download="nom-du-fichier">Télécharger la notice</a>
+    </footer>
+  </body>
+</html>
